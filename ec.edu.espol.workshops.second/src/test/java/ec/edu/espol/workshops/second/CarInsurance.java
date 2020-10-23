@@ -16,7 +16,7 @@ public class CarInsurance {
 		int edad = entrada.nextInt();
 		
 		Customer customer = new Customer(edad,sexo,state);
-/*
+
 		if(customer.getSex().equals('M')&& customer.getAge() < 25 && customer.getState().equalsIgnoreCase("not married")) {
 			customer.setPrima(customer.getPrima()+1500);
 			System.out.print(customer.getPrima());
@@ -31,7 +31,7 @@ public class CarInsurance {
 			prima-=100;
 			System.out.print(customer.getPrima());
 		}
-		*/
+		
 		
 	}
 	
