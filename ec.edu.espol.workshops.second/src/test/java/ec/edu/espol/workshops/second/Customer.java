@@ -7,14 +7,41 @@ public class Customer {
 	private int prima ;
 	
 	public Customer(int age, String sex, String state) {
-		super();
 		this.age = age;
 		this.sex = sex;
 		this.state = state;
 		this.prima = 500;
 	}
 
+	public int getAge() {
+		return this.age;
+	}
 	
+	public String getSex() {
+		return this.sex;
+	}
 	
+	public String getState() {
+		return this.state;
+	}
 	
+	public int getPrima() {
+		return this.prima;
+	}
+	
+	public void setAge(int age) {
+		this.age=age;
+	}
+	
+	public void setSex(String sex) {
+		this.sex=sex;
+	}
+	
+	public void setState(String state) {
+		this.state=state;
+	}
+	
+	public void setPrima(int prima) {
+		this.prima=prima;
+	}
 }
