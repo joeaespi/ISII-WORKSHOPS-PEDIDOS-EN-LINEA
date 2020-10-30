@@ -21,7 +21,7 @@ public class CarInsurance {
 			customer.setPrima(customer.getPrima()+1500);
 			System.out.print(customer.getPrima());
 		}
-		if(sexo.equals('M') || state.equalsIgnoreCase("married") ) {
+		if(customer.getSex().equals('M') || state.equalsIgnoreCase("married") ) {
 			customer.setPrima(customer.getPrima()-200);
 			System.out.print(customer.getPrima());
 		}
