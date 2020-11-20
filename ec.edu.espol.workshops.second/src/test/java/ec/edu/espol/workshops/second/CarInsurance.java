@@ -24,12 +24,12 @@ public class CarInsurance {
 		LOG.info("Ingrese su edad:");
 		int edad = entrada.nextInt();
 		Customer customer = new Customer(edad, sexo, state);
-		if (customer.getSex().equals('M') && customer.getAge() < 25 
+		if (customer.getSex().equals("M") && customer.getAge() < 25 
 				&& customer.getState().equalsIgnoreCase("not married")) {
 			customer.setPrima(customer.getPrima() + 1500);
 			LOG.info(String.valueOf(customer.getPrima()));
 		}
-		if (sexo.equals('M') && state.equalsIgnoreCase("married")) {
+		if (sexo.equals("M") && state.equalsIgnoreCase("married")) {
 			customer.setPrima(customer.getPrima() - 200);
 			LOG.info(String.valueOf(customer.getPrima()));
 		}
