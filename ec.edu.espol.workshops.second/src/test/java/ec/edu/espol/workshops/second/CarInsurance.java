@@ -29,7 +29,8 @@ public class CarInsurance {
 			customer.setPrima(customer.getPrima() + 1500);
 			LOG.info(String.valueOf(customer.getPrima()));
 		}
-		if (sexo.equals("M") && state.equalsIgnoreCase("married")) {
+		if (sexo.equals("M") && state.equalsIgnoreCase("married")
+				&& customer.getAge() < 45) {
 			customer.setPrima(customer.getPrima() - 200);
 			LOG.info(String.valueOf(customer.getPrima()));
 		}
