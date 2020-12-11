@@ -52,3 +52,4 @@ public class Customer {
     this.prima = prima;
   }
 }
+
