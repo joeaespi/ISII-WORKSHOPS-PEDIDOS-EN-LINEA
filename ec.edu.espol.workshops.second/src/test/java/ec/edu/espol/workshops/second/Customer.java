@@ -17,7 +17,7 @@ public class Customer {
     this.age = age;
     this.sex = sex;
     this.state = state;
-    this.prima = 500;
+    this.prima = 600;
   }
 
   public int getAge() {
