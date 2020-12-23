@@ -1,19 +1,17 @@
 package ec.edu.espol.workshops.second;
 import  java.util.Scanner;
 import java.util.logging.Logger;
+/**Aquí se realizan las pruebas.
 
+ * @author: Joel Espinoza - Dario Triviño
+
+ * @version: 08/11/2020/A
+
+ * @see a
+
+ */
 public class CarInsurance {
-  /**Aquí se realizan las pruebas.
-
-   * @author: Joel Espinoza - Dario Triviño
-
-   * @version: 08/11/2020/A
-
-   * @see a
-
-   */
 	private static final Logger LOG = Logger.getLogger("CarInsurance");
-	
 	public static int carInsurance(String sexo,String state,int edad) {
 		Customer customer = new Customer(edad, sexo, state);
 		if (customer.getSex().equals("M") && customer.getAge() < 25 
@@ -28,6 +26,9 @@ public class CarInsurance {
 		if (edad > 45 && edad < 65) {
 			customer.setPrima(customer.getPrima() - 100);
 			LOG.info(String.valueOf(customer.getPrima()));
+		}
+		if(edad >=80) {
+			customer.setPrima(-1);
 		}
 	    return customer.getPrima();		
 	}

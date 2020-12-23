@@ -33,4 +33,12 @@ public class TestStatementCoverage {
 	      assertEquals(CarInsurance.carInsurance(sexo, casado, edad),prima);
 	 }
 	 
+	 @Test
+	 public void testFourth() {
+		  int prima = -1;
+	      String sexo = "M";
+	      int edad = 90;
+	      String casado = "not married";
+	      assertEquals(CarInsurance.carInsurance(sexo, casado, edad),prima);
+	 }
 }
