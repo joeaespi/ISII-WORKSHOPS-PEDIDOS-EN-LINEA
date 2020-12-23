@@ -36,18 +36,6 @@ public class Customer {
     return this.prima;
   }
 
-  public void setAge(int age) {
-    this.age = age;
-  }
-
-  public void setSex(String sex) {
-    this.sex = sex;
-  }
-
-  public void setState(String state) {
-    this.state = state;
-  }
-
   public void setPrima(int prima) {
     this.prima = prima;
   }

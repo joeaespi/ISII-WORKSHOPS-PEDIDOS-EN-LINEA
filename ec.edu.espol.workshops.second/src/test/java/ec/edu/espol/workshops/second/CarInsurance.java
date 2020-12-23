@@ -13,16 +13,8 @@ public class CarInsurance {
 
    */
 	private static final Logger LOG = Logger.getLogger("CarInsurance");
-	public static void main(String[] args) {
-		int prima = 500;
-		Scanner entrada = new Scanner(System.in);
-		LOG.info("The insurance company");
-		LOG.info("Su sexo: M/F");
-		String sexo = entrada.nextLine();
-		LOG.info("Estad civil: married/not married");
-		String state = entrada.nextLine();
-		LOG.info("Ingrese su edad:");
-		int edad = entrada.nextInt();
+	
+	public static int carInsurance(String sexo,String state,int edad) {
 		Customer customer = new Customer(edad, sexo, state);
 		if (customer.getSex().equals("M") && customer.getAge() < 25 
 				&& customer.getState().equalsIgnoreCase("not married")) {
@@ -35,8 +27,8 @@ public class CarInsurance {
 		}
 		if (edad > 45 && edad < 65) {
 			customer.setPrima(customer.getPrima() - 100);
-			prima -= 100;
 			LOG.info(String.valueOf(customer.getPrima()));
 		}
+	    return customer.getPrima();		
 	}
 } //terminación de la clase
