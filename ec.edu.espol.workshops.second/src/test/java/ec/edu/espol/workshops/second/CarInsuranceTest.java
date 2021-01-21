@@ -19,27 +19,17 @@ public class CarInsuranceTest {
 	 @Test
 	 public void testSecond() {
 		 System.out.print("Second Test");
-	     int prima = 300;;
+	     int prima = 400;;
 	      String sexo = "M";
-	      int edad = 25;
+	      int edad = 26;
 	      String casado = "married";
 	      assertEquals(CarInsurance.carInsurance(sexo, casado, edad),prima);
 	 }
+	 
 	 
 	 @Test
 	 public void testThird() {
 		 System.out.print("Third Test");
-		  int prima = 400;
-	      String sexo = "M";
-	      int edad = 40;
-	      String casado = "married";
-	      assertEquals(CarInsurance.carInsurance(sexo, casado, edad),prima);
-	 }
-	 
-	 
-	 @Test
-	 public void testFourth() {
-		 System.out.print("Fourth Test");
 		  int prima = 400;
 	      String sexo = "F";
 	      int edad = 55;
@@ -48,8 +38,8 @@ public class CarInsuranceTest {
 	 }
 	 
 	 @Test
-	 public void testFith() {
-		 System.out.print("Fith Test");
+	 public void testFourth() {
+		 System.out.print("Fourth Test");
 		  int prima = 500;
 	      String sexo = "M";
 	      int edad = 90;
