@@ -17,21 +17,12 @@ public class CarInsurance {
 			customer.setPrima(customer.getPrima() + 1500);
 			LOG.info(String.valueOf(customer.getPrima()));
 		}
-		if (customer.getSex().equals("M") && customer.getState().equalsIgnoreCase("married")
-				&& customer.getAge() < 45) {
-			if(customer.getAge() > 25) {
-				customer.setPrima(customer.getPrima() - 100);
-				LOG.info(String.valueOf(customer.getPrima()));
-			}
-			customer.setPrima(customer.getPrima() - 200);
-			LOG.info(String.valueOf(customer.getPrima()));
-		}
 		if (customer.getAge() > 45 && customer.getAge() < 65) {
 			customer.setPrima(customer.getPrima() - 100);
 			LOG.info(String.valueOf(customer.getPrima()));
 		}
 		if (customer.getSex().equals("M") && customer.getAge() < 45 
-				&& customer.getAge() > 25 && customer.getState().equalsIgnoreCase("not married")) {
+				&& customer.getAge() > 25 ) {
 			customer.setPrima(customer.getPrima() - 100);
 			LOG.info(String.valueOf(customer.getPrima()));
 		}
