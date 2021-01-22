@@ -28,4 +28,16 @@ public class CarInsurance {
 		}
 		return customer.getPrima();		
 	} 
+	public static void main(String args[]) {
+		Scanner entrada = new Scanner(System.in);
+		LOG.info("The insurance company");
+		LOG.info("Su sexo: M/F");
+		String sexo = entrada.nextLine();
+		LOG.info("Estad civil: married/not married");
+		String state = entrada.nextLine();
+		LOG.info("Ingrese su edad:");
+		int edad = entrada.nextInt();
+		carInsurance(sexo,state,edad);
+		
+	}
 } //terminación de la clase
