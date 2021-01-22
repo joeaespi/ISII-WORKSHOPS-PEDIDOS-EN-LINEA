@@ -27,19 +27,19 @@ public class CarInsurance {
 	public static void main(String args[]) {
 		System.out.println("The insurance company");
 		System.out.print("Ingrese su edad:");
-	    String entradaTeclado = "";
-	    Scanner entradaEscaner = new Scanner(System.in);
-	    entradaTeclado = entradaEscaner.nextLine();
-	    int edad = Integer.parseInt(entradaTeclado);
-	    System.out.print("Ingrese su sexo(M/F):");
-	    String sexo = entradaEscaner.nextLine();
-	    entradaTeclado = "";
-	    System.out.print("Ingrese si esta casado o no(married/not married):");
-	    String casado = entradaEscaner.nextLine();
-	    entradaTeclado = "";
-	    int prima=0;
-	    prima = carInsurance(sexo,casado,edad);
-	    System.out.println("El valor de la prima es "+prima);
+	    	String entradaTeclado = "";
+	    	Scanner entradaEscaner = new Scanner(System.in);
+	    	entradaTeclado = entradaEscaner.nextLine();
+	    	int edad = Integer.parseInt(entradaTeclado);
+	    	System.out.print("Ingrese su sexo(M/F):");
+	    	String sexo = entradaEscaner.nextLine();
+	    	entradaTeclado = "";
+	    	System.out.print("Ingrese si esta casado o no(married/not married):");
+	    	String casado = entradaEscaner.nextLine();
+	    	entradaTeclado = "";
+	    	int prima=0;
+	    	prima = carInsurance(sexo,casado,edad);
+	    	System.out.println("El valor de la prima es "+prima);
 		
 	}
 } //terminación de la clase
