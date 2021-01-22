@@ -3,14 +3,13 @@ import  java.util.Scanner;
 import java.util.logging.Logger;
 
 public class CarInsurance {
-  /**Aquí se realizan las pruebas.
-   * @author: Joel Espinoza - Dario Triviño
+  /**AquÃ­ se realizan las pruebas.
+   * @author: Joel Espinoza - Dario TriviÃ±o
    * @version: 20/01/2021/A
    * @see A
    */
 	private static final Logger LOG = Logger.getLogger("CarInsurance");
 	public static int carInsurance(String sexo,String state,int edad) {
-		LOG.info("The insurance company");
 		Customer customer = new Customer(edad, sexo, state);
 		if (customer.getSex().equals("M") && customer.getAge() < 25 
 				&& customer.getState().equalsIgnoreCase("not married")) {
@@ -40,4 +39,4 @@ public class CarInsurance {
 		carInsurance(sexo,state,edad);
 		
 	}
-} //terminación de la clase
+} //terminaciÃ³n de la clase
