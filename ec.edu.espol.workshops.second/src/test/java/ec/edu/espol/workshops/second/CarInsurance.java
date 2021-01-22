@@ -14,29 +14,32 @@ public class CarInsurance {
 		if (customer.getSex().equals("M") && customer.getAge() < 25 
 				&& customer.getState().equalsIgnoreCase("not married")) {
 			customer.setPrima(customer.getPrima() + 1500);
-			LOG.info(String.valueOf(customer.getPrima()));
 		}
 		if (customer.getAge() > 45 && customer.getAge() < 65) {
 			customer.setPrima(customer.getPrima() - 100);
-			LOG.info(String.valueOf(customer.getPrima()));
 		}
 		if (customer.getSex().equals("M") && customer.getAge() < 45 
 				&& customer.getAge() > 25 ) {
 			customer.setPrima(customer.getPrima() - 100);
-			LOG.info(String.valueOf(customer.getPrima()));
 		}
 		return customer.getPrima();		
 	} 
 	public static void main(String args[]) {
-		Scanner entrada = new Scanner(System.in);
-		LOG.info("The insurance company");
-		LOG.info("Su sexo: M/F");
-		String sexo = entrada.nextLine();
-		LOG.info("Estad civil: married/not married");
-		String state = entrada.nextLine();
-		LOG.info("Ingrese su edad:");
-		int edad = entrada.nextInt();
-		carInsurance(sexo,state,edad);
+		System.out.println("The insurance company");
+		System.out.print("Ingrese su edad:");
+	    String entradaTeclado = "";
+	    Scanner entradaEscaner = new Scanner(System.in);
+	    entradaTeclado = entradaEscaner.nextLine();
+	    int edad = Integer.parseInt(entradaTeclado);
+	    System.out.print("Ingrese su sexo(M/F):");
+	    String sexo = entradaEscaner.nextLine();
+	    entradaTeclado = "";
+	    System.out.print("Ingrese si esta casado o no(married/not married):");
+	    String casado = entradaEscaner.nextLine();
+	    entradaTeclado = "";
+	    int prima=0;
+	    prima = carInsurance(sexo,casado,edad);
+	    System.out.println("El valor de la prima es "+prima);
 		
 	}
 } //terminación de la clase
